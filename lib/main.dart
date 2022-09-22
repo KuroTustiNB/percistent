@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percistent/screens/home_screen.dart';
 
 void main() {
   runApp(const SqliteApp());
@@ -13,6 +14,6 @@ class SqliteApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'SQLite Example',
         initialRoute: 'home',
-        routes: {'home': (context) => HomeScreen()});
+        routes: {'home': (context) => const HomeScreen()});
   }
 }
